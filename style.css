@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins';
+    
+}
+html,body{
+    overflow:hidden;
+    background: linear-gradient(315deg, #12013c 0%, #3f0070 100%);
+    height:100%;
+}
+.disc{
+    position:absolute;
+    margin-top:-30vh;
+    margin-left:15vw;
+    /* transition: all ease; */
+}
+.disc img{
+    max-width:90%;
+    animation: animate 7s linear infinite;
+}
+@keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.handle{
+    margin-top:-3vh;
+    margin-left:63vw;
+    position:relative;
+    z-index: 1; 
+}
+.handle img{
+    height:500px;
+}
+.control-bg{
+    position:absolute;
+    background-color: rgba(0,0,0,0.25);
+    width:60px;
+    height:60px;
+    margin-top: 2vh;
+    margin-left:2vw;
+    border-radius: 50%;
+
+}
+.control-bg .iconify{
+    margin-left:9px;
+    margin-top:9px;
+    position:relative;
+    z-index:10;
+}
+.control-bg #mute{
+    position:absolute;
+    margin-right:10vw;
+    display: none;
+}
+.iconify:hover{
+    cursor: pointer;
+}
+
+#container { 
+    margin: 0%; 
+}
+
+h1{
+    position:absolute;
+    margin-top:39vh;
+    z-index:6;
+    text-align:center;
+    margin-left:28vw;
+    color:#fff;
+    text-shadow:10px 10px 4px rgba(0,0,0,0.25);
+
+}
+
+#circle { 
+    position: absolute; 
+    z-index:9; 
+    width: 100%; 
+    padding-bottom: 100%; 
+    overflow: hidden; 
+    margin-top:0.5vh;
+    margin-left:0vw;
+}
+
+#circle text { 
+    font-family: 'Poppins'; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-shadow:10px 10px 4px rgba(0,0,0,0.25);
+}
+
+#circle svg { 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 540px;
+    animation-name: rotate;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+

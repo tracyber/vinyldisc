@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stereo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- AUDIO STARTS -->
+    <audio id="bgaudio"  type="audio/mp3" src="./uploads/Paul Anka - Put Your Head On My Shoulder (1959) HQ Audio.mp3"  loop="loop"></audio>
+    <!-- AUDIO ENDS -->
+
+    <!-- CONTROL STARTS -->
+    <div class="control">
+        <div class="control-bg">
+            <div id="mute"  onclick="play()" class="iconify " data-inline="false" data-icon="majesticons:sound-off-line" style="color: #fff; font-size: 40px;"></div>
+            <div id="play" onclick="mute()" class="iconify " data-inline="false" data-icon="majesticons:sound-up-line" style="color: #fff; font-size: 40px;"></div>
+            <!-- Icon found on iconify.js -->
+        </div>
+    </div>
+    <!-- CONTROL ENDS -->
+
+    <!-- SONG-NAME STARTS -->
+    <div id="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+            <defs>
+                <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+            </defs>
+            <circle cx="150" cy="100" r="75" fill="none"/>
+            <g>
+                <use xlink:href="#circlePath" fill="none"/>
+                <text fill="#fff">
+                    <textPath xlink:href="#circlePath">Paul Anka- Put Your Head On My Shoulder</textPath>
+                </text>
+            </g>
+        </svg>
+        </div>
+    <!-- <div>
+        <h1 >
+            Paul Anka <br>Put Your Head On My Shoulder (1959)
+        </h1>
+    </div> -->
+    <!-- SONG-NAME ENDS -->
+
+    <!-- DISC STARTS -->
+    <div class="disc">
+        <img src="uploads/BG-Vector (2).png">
+    </div>
+
+    <div class="handle">
+        <img src="uploads/handle.png">
+    </div>
+    <!-- DISC ENDS -->
+
+
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
